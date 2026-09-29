@@ -1,15 +1,23 @@
 #include <stdio.h>
-
+#include <math.h>
 
 int main()
 {
-    printf("Hello world");
 
-    int a,b,c;
+    int year = 2000;
 
-    scanf("%d  %d  %d", &a , &b, &c);
-    printf("a = %d b = %d c = %d", a,b,c);
+    if(year % 400 == 0)
+    {
+        printf("%d Is Leap Year", year);
+    }
+    else if(year % 4 == 0 && year % 100 != 0)
+    {
+        printf("%d Is Leap Year", year);
+    }
+    else
+    {
+        printf("Leap year not possible");
+    }
 
     return 0;
 }
-
